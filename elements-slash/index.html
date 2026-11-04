@@ -73,23 +73,33 @@
         h1 { font-size: 2em; }
         p, li { font-size: 1em; }
       }
+
+      .back {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        display: flex;
+        padding: 6px;
+      }
     </style>
   </head>
   <body>
+    <a class="back" href="../" aria-label="Back to ATL Productions"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></a>
     <img src="icon.png" alt="Elements Slash Logo" class="logo">
     <h1>Elements Slash - Privacy Policy</h1>
     <p class="updated">Last updated: November 4, 2026</p>
     <p style="margin: 0 0 30px;"><strong>Privacy Policy</strong> · <a href="terms/">Terms of Service</a></p>
 
     <main>
-      <p>"Elements Slash" is made by ATL Productions, Italy, who is responsible for this game and this policy. The game has no accounts of its own and no ads. It uses three services, each described below: Google Play Games (achievements and cloud save, optional), Google Play (in-app purchases, optional) and Unity Analytics (gameplay statistics, only if you agree).</p>
+      <p>"Elements Slash" is made by ATL Productions, Italy, who is responsible for this game and this policy. The game has no accounts of its own and no ads. It uses three services, each described below: Google Play Games (achievements, a leaderboard and cloud save, optional), Google Play (in-app purchases, optional) and Unity Analytics (gameplay statistics, only if you agree).</p>
 
       <h2>Your progress</h2>
       <p>Your progress and settings are saved on your device, in the game's private storage. Uninstalling the game deletes them. If you are signed in to Google Play Games, a copy of your progress is also saved to your Google account (see Cloud save below).</p>
 
       <h2>Google Play Games</h2>
-      <p>The game uses Google Play Games Services for achievements and cloud save. When the game starts, it signs you in to Google Play Games automatically if you have a Play Games profile on your device.</p>
+      <p>The game uses Google Play Games Services for achievements, the Survival leaderboard and cloud save. When the game starts, it signs you in to Google Play Games automatically if you have a Play Games profile on your device.</p>
       <p><strong>Achievements:</strong> when you complete a quest, or make progress toward one, the game reports that achievement progress to Google so it appears in your Play Games profile.</p>
+      <p><strong>Leaderboard:</strong> when you finish a run in the Survival Arena, the game sends your best number of waves cleared to the Google Play Games leaderboard. Leaderboards are public: other players can see your Play Games name, avatar and score, depending on your Play Games profile visibility settings, which you can change in the Google Play Games app.</p>
       <p><strong>Cloud save:</strong> while you are signed in, the game saves a copy of your progress (battles, items, upgrades and other game progress) to Google Play Games Saved Games in your Google account, so you can restore it on another device. The game never replaces the progress on your device without asking you first.</p>
       <p>This information is sent to Google and handled by Google, not by us. We never receive your name, email address or Google account details, and the game does not store your Play Games player ID. Google may process your Play Games profile, your achievements, your saved games and related usage data under its own privacy policy. You can view your achievements, change your profile visibility or delete your Play Games data, saved games included, in the Google Play Games app or your Google account settings.</p>
       <p>Play Games is optional: the game is fully playable without signing in, and without it nothing is sent to Google Play Games.</p>
@@ -101,7 +111,8 @@
       <p>The first time you open the game, it asks whether you want to share gameplay data. Nothing is sent unless you choose "Share", and you can change your choice at any time in the game's Options (Share gameplay data: On / Off). The game works the same either way.</p>
       <p>If you agree, the game sends gameplay statistics to Unity Analytics, a service of Unity Technologies, to help us understand how the game is played and improve it:</p>
       <ul>
-        <li>battles started and how they ended (won, lost, quit or restarted), with the battle number, its duration, the wave reached, and how many times each spell and element was used;</li>
+        <li>battles started and how they ended (won, lost, quit or restarted), with the mode (campaign or Survival Arena), the battle number and its twist, its duration, the wave reached, and how many times each spell and element was used; in the Survival Arena also the starting wave, the waves cleared and the boons chosen;</li>
+        <li>each boon you pick in the Survival Arena, with the boons you were offered;</li>
         <li>which main screens of the camp you open;</li>
         <li>opening the in-game Store, tapping a pack's buy button, and completed or refunded pack purchases (the pack's product name only, never payment details).</li>
       </ul>
