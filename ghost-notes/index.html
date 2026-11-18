@@ -4,92 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghost Notes - Privacy Policy</title>
+    <meta name="description" content="Privacy policy of the Ghost Notes app: what stays on your device, what the permissions are used for, and what is shared only when you choose to.">
     <link rel="icon" type="image/png" href="../atl_productions_logo.png">
     <style>
-      /* Overall page styling */
+      :root {
+        --background: #595959;
+        --card: #4b4b4b;
+        --text: #ffffff;
+        --muted: #e2e2e2;
+        --accent: #ffcc00;
+        --border: rgba(255, 255, 255, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
-        background-color: #595959; /* Set the background color */
-        color: white; /* Default text color */
-        font-family: 'Arial', sans-serif; /* Clean and readable font */
-        text-align: center; /* Center-align all content */
+        background-color: var(--background);
+        color: var(--text);
+        font-family: 'Arial', sans-serif;
         margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        padding: 0 16px 64px;
         line-height: 1.6;
       }
 
-      h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for contrast */
+      main {
+        max-width: 760px;
+        margin: 0 auto;
       }
 
-      p {
-        font-size: 1.2em;
-        margin: 10px 0;
-        max-width: 800px; /* Ensure paragraphs don't get too wide */
+      header {
+        text-align: center;
+        padding-top: 32px;
+      }
+
+      .logo {
+        width: 130px;
+        height: 130px;
+        margin-top: 12px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        font-size: 2.3em;
+        line-height: 1.2;
+        margin: 20px 0 6px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .updated {
+        color: var(--muted);
+        margin: 0 0 28px;
+      }
+
+      h2 {
+        font-size: 1.35em;
+        margin: 36px 0 8px;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
       }
 
-      /* Styling for the app logo */
-      .logo {
-        width: 150px;
-        height: 150px;
-        margin-top: 20px;
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        margin-bottom: 30px;
+      p,
+      li {
+        font-size: 1.05em;
       }
 
-      /* Styling the link */
-      a {
-        color: white;
-        text-decoration: none;
+      p {
+        margin: 10px 0;
+      }
+
+      ul {
+        padding-left: 22px;
+        margin: 8px 0;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .summary {
+        background-color: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .summary h2 {
+        margin-top: 4px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+      }
+
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      th {
+        font-size: 0.95em;
+        color: var(--muted);
+      }
+
+      td:first-child {
         font-weight: bold;
+        white-space: nowrap;
+      }
+
+      a {
+        color: var(--text);
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
 
       a:hover {
-        color: #ffcc00; /* Make the link yellow on hover */
-        text-decoration: underline;
+        color: var(--accent);
       }
 
-      /* Mobile responsive adjustments */
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 2em;
-        }
-        p {
-          font-size: 1em;
-        }
-      }
-      /* Back to the ATL Productions page */
       .back {
         position: absolute;
         top: 16px;
         left: 12px;
         display: flex;
         padding: 6px;
-        color: white;
+        color: var(--text);
       }
 
       .back:hover {
-        color: #ffcc00;
+        color: var(--accent);
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8em;
+        }
+
+        p,
+        li {
+          font-size: 1em;
+        }
+
+        td:first-child {
+          white-space: normal;
+        }
       }
     </style>
   </head>
   <body>
     <a class="back" href="../" aria-label="Back to ATL Productions"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></a>
-    <!-- Logo of the app (replace 'logo.png' with the actual logo file) -->
-    <img src="icon.png" alt="Ghost Notes Logo" class="logo">
-    
-    <h1>Ghost Notes - Privacy Policy</h1>
-    <p>The application "Ghost Notes" does not collect or store personal data.</p>
-    <p>If you installed this application from Google Play, then Google Play does collect some personal data. Please see the privacy policy for Google Play Services here:
-      <a href="https://policies.google.com/privacy" target="_blank">Google Play Privacy Policy</a>
-    </p>
+
+    <main>
+      <header>
+        <img src="icon.png" alt="Ghost Notes Logo" class="logo">
+        <h1>Ghost Notes - Privacy Policy</h1>
+        <p class="updated">Last updated: November 18, 2026</p>
+      </header>
+
+      <section class="summary">
+        <h2>In short</h2>
+        <ul>
+          <li>Ghost Notes has no account, no servers, no ads and no analytics. We do not collect, receive or sell any personal data.</li>
+          <li>Your notes, to-do lists, links and images are stored only on your device.</li>
+          <li>Data leaves the app only when you choose to: sharing, exporting a backup, opening a link, or linking reminders to your calendar.</li>
+          <li>Ghost content never leaves the app through reminders, calendar events or home screen widgets.</li>
+        </ul>
+      </section>
+
+      <h2>Data stored on your device</h2>
+      <p>Everything you create in Ghost Notes stays in the app's private storage on your device: notes, to-do lists, saved links, images, attachments, reminders and your settings. This data is not sent to us or to any third party by the app.</p>
+      <p>If you uninstall the app or clear its data, this content is deleted. Your device's own backup service (for example Android backup) may include app data according to your device settings.</p>
+
+      <h2>Ghost mode</h2>
+      <p>Content you mark as Ghost is hidden from the normal view and can be protected with your device's lock (fingerprint, face or PIN). Authentication is handled entirely by your device's operating system: Ghost Notes never receives or stores your biometric data or PIN.</p>
+      <p>While Ghost mode is on, the app can block screenshots and the preview in the recent apps screen. Reminders for Ghost notes show a generic text, and Ghost items can't be placed on home screen widgets or added to your calendar.</p>
+
+      <h2>Calendar link</h2>
+      <p>Ghost Notes can add the reminders of your notes to your device calendar. The "Link calendar" option is on by default, but nothing is written until you set your first reminder and grant the calendar permission. You can turn it off at any time in Settings.</p>
+      <ul>
+        <li>For each reminder of a normal note, the app creates an event in your device's default calendar with the note title, the note text, the reminder time and its repeat.</li>
+        <li>Ghost notes are never added. Making a note Ghost removes its event.</li>
+        <li>Changing or removing a reminder updates or removes its event. Turning the option off removes the events created by the app.</li>
+        <li>If your device calendar is synced with an online account, such as a Google account, your calendar provider will receive these events and handle them under its own privacy policy, for example the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <p>The app only asks for a permission when you use the feature that needs it.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Camera</td>
+              <td>Taking photos for the gallery or note attachments, and scanning QR codes of links.</td>
+            </tr>
+            <tr>
+              <td>Photos and storage</td>
+              <td>Picking images from your device, saving images to your gallery, and importing or exporting backup files.</td>
+            </tr>
+            <tr>
+              <td>Notifications and alarms</td>
+              <td>Showing your reminders at the time you set, and scheduling them again after the device restarts.</td>
+            </tr>
+            <tr>
+              <td>Calendar</td>
+              <td>Adding, updating and removing the events of your reminders, only while the calendar link is on.</td>
+            </tr>
+            <tr>
+              <td>Biometrics</td>
+              <td>Unlocking Ghost mode with your device's fingerprint, face or PIN.</td>
+            </tr>
+            <tr>
+              <td>Internet</td>
+              <td>Opening the links you save. Links open in your browser or in the app that handles them.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>When data leaves the app</h2>
+      <p>Only when you take one of these actions:</p>
+      <ul>
+        <li><strong>Sharing</strong> a note, link or image sends it to the app you pick in the share menu.</li>
+        <li><strong>Exporting</strong> creates a backup file (named GhostNotesBackup with the date and time) in the location you choose. The file is not encrypted and may include Ghost content if you select it, so keep it somewhere safe.</li>
+        <li><strong>Copying</strong> places the text on your device clipboard.</li>
+        <li><strong>Opening a link</strong> loads it in your browser, under that website's own policies.</li>
+        <li><strong>Read aloud</strong> uses your device's text-to-speech engine. Depending on your device settings, that engine may process text online.</li>
+        <li><strong>Home screen widgets</strong> show the note or image you place on them on your home screen. Ghost items can't be placed on widgets.</li>
+        <li><strong>Calendar link</strong> writes reminders to your device calendar, as described above.</li>
+      </ul>
+
+      <h2>Google Play</h2>
+      <p>If you installed Ghost Notes from Google Play, Google Play collects some data on its own, for example for installs, updates and crash reports. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+      <h2>Children</h2>
+      <p>Ghost Notes does not collect personal data from anyone, including children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the new version will be published on this page with an updated date.</p>
+    </main>
   </body>
 </html>
